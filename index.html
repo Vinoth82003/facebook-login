@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-content">
+            <section class="inner-section text-container">
+                <div class="frame-content">
+                    <h1 class="app-name">
+                        facebook
+                    </h1>
+                    <p class="app-description">
+                        Connect withfriends and the world <br> around you on Social media app
+                    </p>
+                </div>
+            </section>
+            <section class="inner-section login-section">
+                <div class="frame">
+                    <form action="" class="login">
+                        <div class="field-input">
+                            <input type="text" name="username" id="username" placeholder="Email or phone number" class="input">
+                        </div>
+                        <div class="field-input">
+                            <input type="password" name="password" id="password" placeholder="Password" class="input">
+                        </div>
+                        <button class="login-btn">Log In</button>
+                        <a href="#" class="forgot-password">forgot password?</a>
+                    </form>
+                    <div class="others">
+                        <button class="btn-create-account">Create new account</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="signup-content">
+            <div class="signup-frame">
+                <div class="frame-header">
+                    <div class="frame-content">
+                        <h1 class="title">Sign Up</h1>
+                        <p class="text">It's quick and easy</p>
+                    </div>
+                    <div class="frame-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="frame-body">
+                    <form action="" class="signup-form">
+                        <div class="input-field two-input">
+                            <div class="input-box error">
+                                <input type="text" name="first-name" id="first-name" placeholder="First name" class="input validate">
+                                <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last name" class="input validate">
+                                <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <div class="input-box">
+                                <input type="text" name="mobileOrEmail" id="mobileOrEmail" placeholder="Mobile number or email" class="input validate">
+                                <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <div class="input-box">
+                                <input type="text" name="newpassword" id="newpassword" placeholder="New password" class="input validate">
+                                <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+                            </div>
+                        </div>
+                        <div class="input-field label">
+                            <label>Birthday <i class="fas fa-question-circle"></i></label>
+                            <div class="multi-input">
+                                <select name="month" id="month" class="input">
+                                    <option value="">month</option>
+                                </select>
+                                <select name="date" id="date" class="input">
+                                    <option value="">date</option>
+                                </select>
+                                <select name="year" id="year" class="input">
+                                    <option value="">month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-field label">
+                            <label>Gender <i class="fas fa-question-circle"></i></label>
+                            <div class="multi-input">
+                                <label class="gender-label">
+                                    Female 
+                                    <input type="radio" name="gender" id="gender">
+                                </label>
+                                <label class="gender-label">
+                                    Male 
+                                    <input type="radio" name="gender" id="gender">
+                                </label>
+                                <label class="gender-label">
+                                    Custom 
+                                    <input type="radio" name="gender" id="gender">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-field form-button">
+                            <button class="signup">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

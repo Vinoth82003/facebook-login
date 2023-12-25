@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login-page{
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.login-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #ededed;
+}
+
+.inner-section{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-name{
+    color: #0079cf;
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.app-description{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.frame{
+    min-width: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #b9b9b9;
+    border-radius: 5px;
+    min-height: 300px;
+    padding: 10px;
+    max-width: calc(100% - 10px);
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.input{
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.input:focus{
+    border: 1px solid #0079cf;
+    outline: none;
+}
+
+.login-btn{
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #0079cf;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password{
+    color: #0079cf;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.others{
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-create-account{
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: green;
+    color: #fff;
+    border-radius: 5px ;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-content{
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: #dddddd36;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.signup-frame{
+    min-width: 320px;
+    width: 450px;
+    max-width: calc(100% - 10px);
+    min-height: 300px;
+    padding: 13px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #b9b9b9;
+    border: 2px solid #ddd;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.frame-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    color: #1f1f1f;
+}
+
+.text{
+    color: #353535;
+    margin-top: 5px;
+}
+
+.frame-close{
+    font-size: 20px;
+    color: #353535;
+    cursor: pointer;
+}
+
+.frame-body{
+    margin-top: 20px;
+    border-top: 1px solid #b9b9b9;
+    padding: 15px 0;
+}
+
+.input-field{
+    padding: 10px;
+    position: relative;
+}
+
+.two-input{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-box.error .input{
+    border: 1px solid red;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.input-box.error .icon{
+    display: inline-block;
+}
+
+.fas.fa-exclamation-circle{
+    color: red;
+}
+
+
+
+.multi-input{
+   margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.gender-label{
+    width: calc(100%/3);
+    min-width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label{
+    color: #4e4e4e;
+}
+
+.fas.fa-question-circle{
+    color: #4e4e4e;
+    font-size: 14px;
+}
+
+input[type="radio"]{
+    accent-color: #0079cf;
+}
+
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-content{
+    display: none;
+}
+
+.signup-content.active, .signup-content.done{
+    display: flex;
+}
+
+.signup-content.active .signup-frame{
+    animation: .3s pop-up ease-in forwards;
+}
+
+.signup-content.done .signup-frame{
+    animation: .3s pop-down ease-in forwards;
+}
+
+@keyframes pop-up {
+    0%{
+        margin-top: 100px;
+        opacity: 0;
+    }100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes pop-down {
+    0%{
+        margin-top: 0;
+        opacity: 1;
+    }100%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .inner-section{
+        flex-basis: 0;
+    }
+
+    .login-content {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 30px;
+    }
+
+    .login-section{
+        align-items: start;
+    }
+
+}
